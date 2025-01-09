@@ -1,4 +1,4 @@
-// utm-handler-v2.js
+// utm-handler.js
 (function () {
   // Configuration
   const SUPABASE_URL = "https://elbmqemwuvdxchmmhmza.supabase.co";

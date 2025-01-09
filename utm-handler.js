@@ -4,6 +4,8 @@
     const SUPABASE_URL = 'https://elbmqemwuvdxchmmhmza.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVsYm1xZW13dXZkeGNobW1obXphIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU4NzM1NjYsImV4cCI6MjA1MTQ0OTU2Nn0.K-0jDr78dQFiz1woW7BkxZKhG5J5vSubHCu3CwEONSs';
     const PIXEL_ID = document.currentScript.getAttribute('data-token');
+    const PRODUCT_ID = document.currentScript.getAttribute('data-product');
+
   
     // Get user_id from pixel settings
     async function getUserId() {
@@ -56,6 +58,7 @@
           creative_id: this.getParam('CreativeID'),
           click_id: this.getParam('click_id'),
           pixel_id: PIXEL_ID,
+          product_id: PRODUCT_ID,
           utm_campaign: this.getParam('utm_campaign'),
           utm_medium: this.getParam('utm_medium'),
           utm_source: this.getParam('utm_source'),
